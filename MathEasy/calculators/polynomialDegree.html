@@ -1,0 +1,29 @@
+<div class="back" onclick="openOption('appdata/menudata/generalMaths.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="degcal">
+    <h2 >Polynomial Degree</h2>
+    <br>
+    <form action="">
+        <div class="form-group">
+            <input type="text" style="width: 15.625rem;" class="form__field" name="a" id="exp"
+                placeholder="Enter a Polynomial expression" /><br><br>
+            <button type="button" class="btn btn-outline-light" onclick="degcal()">Find</button>
+            <button type="button" class="btn btn-outline-light" onclick="this.form.reset();">Reset</button>
+            <br><br><br>
+            <p class="stopwrap" style=" font-size: xx-large; text-decoration: underline; text-align: left;
+        font-family:mathfont;" id="deg"></p>
+        </div>
+    </form>
+
+</div>

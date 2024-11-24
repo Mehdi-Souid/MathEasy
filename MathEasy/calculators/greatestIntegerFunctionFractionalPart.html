@@ -1,0 +1,33 @@
+<div class="back" onclick="openOption('appdata/menudata/generalMaths.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="giff">
+    <h2>Greatest Integer Function and Fractional Part</h2>
+    <form class="text-center">
+        <input class="form__field" type="text" id="giffnum" style="max-width: 500px;"><br><br>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center"> <button class="btn btn-light" type="button"
+                    onclick="gif()">Greatest Integer Function</button> </div>
+        </div><br>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center"> <button class="btn btn-light" type="button"
+                    onclick="fp()">Fractional Part Function</button></div>
+        </div></br>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center"> <button class="btn btn-light" type="button"
+                    onclick="this.form.reset();">Reset</button> </div>
+        </div><br>
+    </form>
+    <p id="giffans"></p><br>
+    <p id="fpans"></p><br>
+</div>

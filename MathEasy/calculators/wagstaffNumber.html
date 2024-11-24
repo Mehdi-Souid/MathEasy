@@ -1,0 +1,37 @@
+<div class="back" onclick="openOption('appdata/menudata/generalMaths.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div><div id="wags" style="text-align: center;">
+    <div class="container">
+        <h1 style="color: white;font-family:mathfont;text-align: center;">Wagstaff Number</h2>
+            <br>
+            <p>A Wagstaff prime is a prime number of the form \[{{2^p+1}\over 3}\] , where p is an odd prime.
+            </p>
+            <br>
+            <form action="">
+                <div class="form-group">
+                    <input style="color: white; font-family:mathfont" type="number" id="wag1"
+                        placeholder="Enter the input number" class="form__field">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-light" onclick="wagcal()">FInd</button>
+                    <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                        Reset
+                    </button>
+                </div>
+            </form>
+            <br>
+            <div class="form-group text-center">
+                <p class="stopwrap" style="color:white;" id="wagans"></p><br>
+            </div>
+    </div>
+</div>

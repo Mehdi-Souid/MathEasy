@@ -1,0 +1,40 @@
+<script>
+    function checkFavourites() {
+        var imglocal = JSON.parse(localStorage.getItem('imglocalmap'));
+        for (filename in imglocal) {
+            document.getElementById(imglocal[filename]).src = "icons/favourite.png";
+        }
+    }
+    checkFavourites();
+</script>
+<link rel="stylesheet" href="css/menuCommon.css">
+<div class="back" onclick="openOption('appdata/menu.html','Menu')"><img src="icons/back.png" alt=""></div>
+
+<div class="menu">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="complex1fav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+                <span class="caltext" onclick="loadcalculator('study/Complexidentities.html','Complexidentities')">Identities</span>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="complexop1fav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+                <span class="caltext" onclick="loadcalculator('calculators/opsFor1ComplexNumber.html','Complex1')">Ops for 1 complex number</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="complexop2fav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+                <span class="caltext" onclick="loadcalculator('calculators/opsFor2ComplexNumber.html','Complex2')">Ops for 2 complex number</span>
+            </div>
+        </div>
+    </div>
+</div>

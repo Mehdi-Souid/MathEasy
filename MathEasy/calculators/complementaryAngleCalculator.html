@@ -1,0 +1,41 @@
+<div class="back" onclick="openOption('appdata/menudata/graphsShapes.html','Graph and Spaces')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="compang">
+    <h1 style="font-family:mathfont; text-align:center;">Complementary Angle
+        Calculator </h1>
+    <p>&nbsp;</p>
+    <form action="">
+        <input type="number" name="ang" class="form__field" id="cang" width="5em"
+            placeholder="Enter the angle whose complementary is to be calculated(in degree)">
+        <p>&nbsp;</p>
+        <button type="button" class="btn btn-outline-light" onclick="compangcal()">Calculate</button>
+        <button type="button" class="btn btn-outline-light" onclick="this.form.reset();">Reset</button><br><br>
+        <p id="compangans" style="color: white; text-align: center; font-size: 1.3em; font-family:mathfont"></p>
+        <p>&nbsp;</p>
+    </form>
+    <h1 style="font-family:mathfont; text-align:center;"> Verify if two angles are complementary </h1>
+    <p>&nbsp;</p>
+    <form action="">
+        <input type="number" name="cvang1" class="form__field" id="cvang1" width="5em"
+            placeholder="Enter first angle">
+        <p>&nbsp;</p>
+        <input type="number" name="cvang2" class="form__field" id="cvang2" width="5em"
+            placeholder="Enter second angle">
+        <p>&nbsp;</p>
+        <button type="button" class="btn btn-outline-light" onclick="compangvercal()">VERIFY</button>
+        <button type="button" class="btn btn-outline-light" onclick="this.form.reset();">Reset</button>
+        <p id="compangverans" style="color: white; text-align: center; font-size: 1.3em; font-family:mathfont"></p>
+
+    </form>
+</div>

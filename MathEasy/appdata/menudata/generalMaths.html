@@ -1,0 +1,78 @@
+<script>
+    function checkFavourites() {
+        var imglocal = JSON.parse(localStorage.getItem('imglocalmap'));
+        for (filename in imglocal) {
+            document.getElementById(imglocal[filename]).src = "icons/favourite.png";
+        }
+    }
+    checkFavourites();
+</script>
+<link rel="stylesheet" href="css/menuCommon.css">
+<div class="back" onclick="openOption('appdata/menu.html','Menu')"><img src="icons/back.png" alt=""></div>
+
+<div class="menu">
+    <div class="row">
+      
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/lcmHcfFactors.html','lcm/hcf/factors')">LCM/HCF/Factors</span>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/euclidGCD.html','euclidGCD')">Euclid GCD</span>
+          </div>
+      </div>
+
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/percentageChange.html','percentageChange')">Percentage Change</span>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/percentageOff.html','percentageoff')">Percentage Off</span>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/moduloCalculator.html','moduloCalc')">Modulo Calculator</span>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/sieveOfEratosthenes.html','sieveOfEratosthenes')">Sieve of Eratosthenes</span>
+          </div>
+      </div>
+
+     
+
+
+      <div class="col-md-3 col-6">
+          <div class="option">
+              <img id="statsimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+
+              <span class="caltext" onclick="loadcalculator('calculators/bmiCalculator.html','bmiCalculator')">B.M.I. Calculator</span>
+          </div>
+      </div>
+
+    </div>
+</div>

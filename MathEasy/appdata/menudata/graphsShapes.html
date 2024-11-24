@@ -1,0 +1,184 @@
+<script>
+    function checkFavourites() {
+        var imglocal = JSON.parse(localStorage.getItem('imglocalmap'));
+        for (filename in imglocal) {
+            document.getElementById(imglocal[filename]).src = "icons/favourite.png";
+        }
+    }
+    checkFavourites();
+</script>
+<link rel="stylesheet" href="css/menuCommon.css">
+<div class="back" onclick="openOption('appdata/menu.html','Menu')"><img src="icons/back.png" alt=""></div>      
+
+<div class="menu">    
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="plotimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/plotGraph.html','Plot Graph')">Plot Graph</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="plotangfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/plotAngle.html','Plot Angle')">Plot Angle</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="suppangimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/supplementaryAngleCalculator.html','supplementary angle calculator')">
+                    Supplementary angle calculator</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="compangimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/complementaryAngleCalculator.html','complementary angle calculator')">
+                    Complementary angle calculator</span>                           
+            </div>
+        </div>        
+
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="cartfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/cartesianCoordinatesCalculator.html','Cartesian Coordinates Calculator')">
+                    Cartesian Coordinates Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="sphfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/sphericalCoordinatesCalculator.html','Spherical Coordinates Calculator')">
+                    Spherical Coordinates Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="cylfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/cylindricalCoordinatesCalculator.html','Cylindrical Coordinates Calculator')">
+                    Cylindrical Coordinates Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="polarfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/polarCoordinatesCalculator.html','Polar Coordinates Calculator')">
+                    Polar Coordinates Calculator</span>
+            </div>
+        </div>
+
+      
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="bilinearimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/bilinearInterpolationCalculator.html','Bilinear Interpolation Calculator')">
+                    Bilinear Interpolation Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="analyticalfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/coordinateGeometryCalculator.html','Coordinate Geometry Calculator')">
+                    Coordinate Geometry Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="carpolarcalfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/cartesianCoordinatesToPolarCoordinateCalculator.html',
+                'Cartesian Coordinates to Polar Coordinate Calculator')">
+                    Cartesian Coordinates to Polar Coordinate Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="cylcarcalfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/cylindricalToCartesianCoordinatesCalculator.html','Cylindrical to Cartesian Coordinates Calculator')">
+                    Cylindrical to Cartesian Coordinates Calculator</span>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="centcalfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/triangleCalculator.html','Triangle Calculator')">
+                    Triangle Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="ineqtrifav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/inequalitiesOfTriangles.html','Ineqaulities of Triangles')">
+                Ineqaulities of Triangles</span>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="segfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/segmentAreaCalculator.html','Segment Area Calculator')">
+                    Segment Area Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="arcimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/arcLengthCalculator.html','Arc Calculator')">
+                    Arc Length Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="volumeimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/volumetricWeightCalculator.html','Volumetric Weight Calculator')">
+                    Volumetric Weight Calculator</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="per_chng_volimgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/percentageChangeInVolumeCalculator.html','Percentage Change in Volume Calculator')">
+                    Percentage Change in Volume Calculator</span>
+            </div>
+        </div>
+
+ 
+       
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="back" onclick="openOption('appdata/menudata/generalMaths.html','General Maths')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div id="mis">
+    <h1>MULTIPLICATIVE INVERSE</h1>
+    <p>&nbsp;</p>
+    <div style="color: white; font-size: 1.3em; font-family:mathfont"> Enter number to find mulitplicative
+        answer: <input type="number" name="mians1" id="mians1" placeholder="Enter numerator">
+        <form action="">
+            <input type="number" name="mians2" id="mians2" placeholder="Enter denominator">
+            <p>&nbsp;</p>
+            <button type="button" class="btn btn-outline-light" style="text-align: center;"
+                onclick="midcal()">Calculate in Fraction</button>
+            <button type="button" class="btn btn-outline-light" style="text-align: center;"
+                onclick="mifcal()">Calculate in Decimal</button>
+            <button type="button" class="btn btn-outline-light" style="text-align: center;"
+                onclick="this.form.reset();">Reset</button>
+        </form>
+
+        <p>&nbsp;</p>
+        <p id="mians">
+    </div>
+</div>

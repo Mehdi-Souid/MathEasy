@@ -1,0 +1,81 @@
+<script>
+    function checkFavourites() {
+        var imglocal = JSON.parse(localStorage.getItem('imglocalmap'));
+        for (filename in imglocal) {
+            document.getElementById(imglocal[filename]).src = "icons/favourite.png";
+        }
+    }
+    checkFavourites();
+</script>
+<link rel="stylesheet" href="css/menuCommon.css">
+<div class="back" onclick="openOption('appdata/menu.html','Menu')"><img src="icons/back.png" alt=""></div>      
+
+<div class="menu">    
+    <div class="row">
+       
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="anyBase-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/anyBaseToAnyBaseConverter.html','Any Base to Any Base Convertor')">Any Base to Any Base Convertor</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="binary-hexadecimal-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/binDecOctHexConverterr.html','Binary/Decimal/Hexadecimal Converter')">Bin/Dec/Oct/Hex
+                    Converter</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="adding-all-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/additionOfAnyNumberSystem.html','Addition Of any Number System')">Addition Of any Number System</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="subtract-all-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/subtractionOfAnyNumberSystem.html','Subtraction Of any Number System')">Subtraction Of any Number System</span>                           
+            </div>
+        </div>        
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="multiplying-all-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/multiplicationOfAnyNumberSystem.html','Multiplcation Of any Number System')">Multiplcation Of any Number System</span>                           
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="divide-all-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/divisionOfAnyNumberSystem.html','Division Of any Number System')">Division Of any Number System</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="bcd-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/bcdCodeConverter.html','BCD Code Converter')">BCD Code Converter</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+            <div class="option">
+                <img id="grey-imgfav" src="icons/unfavourite.png" alt="" onclick="addtofavourites(this)">
+                
+                <span class="caltext" onclick="loadcalculator('calculators/greyCodeConverter.html','Grey Code Converter')">Grey Code Converters</span>
+            </div>
+        </div>
+    </div>
+</div>

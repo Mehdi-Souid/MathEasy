@@ -1,0 +1,117 @@
+<div class="back" onclick="openOption('appdata/menudata/equations.html','Equation')">
+    <img
+        style="       
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block !important;
+            height: 30px;
+            box-shadow: 0 0 10px white;
+            border-radius: 50%;
+            padding:5px;
+        " src="./icons/back.png" alt=""></div>
+<div class="col-10">
+<div id="quadeqncal">
+    <h2 style="text-align:center;">Quadratic equation whose roots are K times the roots of given equation
+    </h2>
+    <br>
+    <form action="">
+        <input type="text" id="aofeqn" class="form__field" placeholder="Enter coefficeient of x^2"><br><br>
+        <input type="text" id="bofeqn" class="form__field" placeholder="Enter coefficeient of x"><br><br>
+        <input type="text" id="cofeqn" class="form__field" placeholder="Enter constant term"><br><br>
+        <input type="text" id="kofeqn" class="form__field" placeholder="Enter K times eqn to be multiplied"><br>
+        <br>
+        <button class="btn btn-dark" type="button" onclick="ktimes()">Find</button>
+        <button class="btn btn-dark" type="button" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <br>
+    <h4 id="ktimesans"></h4>
+    <br>
+    <h2 style="text-align:center;">Quadratic equation whose roots are reciprocal to the roots of given
+        equation</h2>
+    <br>
+    <form action="">
+        <input type="text" id="aofeqn1" class="form__field" placeholder="Enter coefficeient of x^2"><br><br>
+        <input type="text" id="bofeqn1" class="form__field" placeholder="Enter coefficeient of x"><br><br>
+        <input type="text" id="cofeqn1" class="form__field" placeholder="Enter constant term"><br>
+        <br>
+        <button class="btn btn-dark" type="button" onclick="recifind()">Find</button>
+        <button class="btn btn-dark" type="button" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <br>
+    <h5 id="recians"></h5>
+    <br>
+    <h2 style="text-align:center;">Generate Quadratic Equation having given sum and product of roots</h2>
+    <br>
+    <form action="">
+        <input type="text" id="sgiven" class="form__field" placeholder="Enter sum of roots"><br><br>
+        <input type="text" id="pgiven" class="form__field" placeholder="Enter product of roots"><br>
+        <br>
+        <button class="btn btn-dark" type="button" onclick="spfind()">Find</button>
+        <button class="btn btn-dark" type="button" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <br>
+    <h5 id="spans"></h5>
+    <br>
+    <h2 style="text-align:center;">Common Roots</h2>
+    <br>
+    <form action="">
+        <input type="text" id="a1cr" class="form__field" placeholder="Enter x^2 term of 1st eqn"><br><br>
+        <input type="text" id="b1cr" class="form__field" placeholder="Enter x term of 1st eqn"><br><br>
+        <input type="text" id="c1cr" class="form__field" placeholder="Enter constant term of 1st eqn"><br><br>
+        <input type="text" id="a2cr" class="form__field" placeholder="Enter x^2 term of 2nd eqn"><br><br>
+        <input type="text" id="b2cr" class="form__field" placeholder="Enter x term of 2nd eqn"><br><br>
+        <input type="text" id="c2cr" class="form__field" placeholder="Enter constant term of 2nd eqn"><br>
+        <br>
+        <button class="btn btn-dark" type="button" onclick="commonroots()">Find</button>
+        <button class="btn btn-dark" type="button" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <br>
+    <h4 id="commonrootsans"></h4>
+    <h4 id="commonrootsexp"></h4>
+    <br>
+    <h2>Form the Cubic equation from the given roots</h2>
+    <br>
+    <form action="">
+        <input type="text" class="form__field" id="rootscubicin1" placeholder="Enter root 1"><br><br>
+        <input type="text" class="form__field" id="rootscubicin2" placeholder="Enter root 2"><br><br>
+        <input type="text" class="form__field" id="rootscubicin3" placeholder="Enter root 3"><br>
+        <br>
+        <button class="btn btn-dark" onclick="rootscubicfind()">Find</button>
+        <button class="btn btn-dark" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <br>
+    <h4 id="rootscubicans"></h4>
+    <br>
+    <h2 style="text-align:center;">Maximum and Minimum value of a quadratic function</h2><br>
+    <form action="">
+        <input type="text" id="aofeqn2" class="form__field" placeholder="Enter coefficeient of x^2"><br><br>
+        <input type="text" id="bofeqn2" class="form__field" placeholder="Enter coefficeient of x"><br><br>
+        <input type="text" id="cofeqn2" class="form__field" placeholder="Enter constant term"><br><br>
+        <button class="btn btn-dark" type="button" onclick="maxminquadfind()">Find</button>
+        <button class="btn btn-dark" type="button" onclick="this.form.reset();">Reset</button>
+    </form>
+
+    <br>
+    <p id="maxminquadans1" style="font-family:mathfont"></p><br>
+    <p id="maxminquadans2" style="font-family:mathfont"></p><br>
+    <br>
+    <h2 style="text-align:center;">Check whether one root of the Quadratic Equation is twice of other or not
+    </h2><br>
+    <form action="">
+        <input type="text" id="aofeqn3" class="form__field" placeholder="Enter coefficeient of x^2"><br><br>
+        <input type="text" id="bofeqn3" class="form__field" placeholder="Enter coefficeient of x"><br><br>
+        <input type="text" id="cofeqn3" class="form__field" placeholder="Enter constant term"><br><br>
+        <button class="btn btn-dark" type="button" onclick="twicefind()">Find</button>
+        <button class="btn btn-dark" type="button" onclick="this.form.reset();">Reset</button><br>
+    </form>
+
+    <p id="twiceans"></p><br>
+</div>
+</div>
