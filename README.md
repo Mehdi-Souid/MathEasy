@@ -72,8 +72,8 @@ To get started with the project, follow these steps:
 1. **Clone the repository:**
 
 ```bash
-git clone <repository_url>  
-cd <project_directory>
+git clone https://github.com/Mehdi-Souid/MathEasy.git  
+cd MathEasy
 ```
 ---
 ## Contribution
